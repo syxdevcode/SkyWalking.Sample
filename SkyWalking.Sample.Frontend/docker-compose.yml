@@ -2,10 +2,7 @@ version: '3.4'
 
 services:
   SkyWalkingSampleFrontend:
+    image: ${DOCKER_REGISTRY}SkyWalkingSampleFrontend
     build:
       context: .
       dockerfile: Dockerfile
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "8083:8083"

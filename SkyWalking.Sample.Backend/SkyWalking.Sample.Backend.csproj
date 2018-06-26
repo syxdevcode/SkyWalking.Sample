@@ -12,4 +12,10 @@
     <PackageReference Include="SkyWalking.Diagnostics.EntityFrameworkCore.Sqlite" Version="0.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="docker-compose.override.yml">
+      <DependentUpon>docker-compose.yml</DependentUpon>
+    </None>
+  </ItemGroup>
+
 </Project>
