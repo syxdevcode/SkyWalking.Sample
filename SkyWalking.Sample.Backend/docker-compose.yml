@@ -2,7 +2,6 @@ version: '3.4'
 
 services:
   SkyWalkingSampleFrontend:
-    image: ${DOCKER_REGISTRY}SkyWalkingSampleFrontend
     build:
       context: .
       dockerfile: Dockerfile
