@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  skywalkingfrontend:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8083:8083"  
+  skywalkingbackend:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8084:8084"

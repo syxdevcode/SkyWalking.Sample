@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyWalking.Sample.Frontend", "SkyWalking.Sample.Frontend\SkyWalking.Sample.Frontend.csproj", "{3513C376-8E71-46F9-AD35-8AE0AB067185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyWalking.Sample.Backend", "SkyWalking.Sample.Backend\SkyWalking.Sample.Backend.csproj", "{66A1E94A-D73C-48B1-B95F-08F16B12BB38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyWalking.Sample.Backend", "SkyWalking.Sample.Backend\SkyWalking.Sample.Backend.csproj", "{66A1E94A-D73C-48B1-B95F-08F16B12BB38}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FC1BF483-E44E-4F87-A8C7-90A4B34570F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{66A1E94A-D73C-48B1-B95F-08F16B12BB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66A1E94A-D73C-48B1-B95F-08F16B12BB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66A1E94A-D73C-48B1-B95F-08F16B12BB38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC1BF483-E44E-4F87-A8C7-90A4B34570F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC1BF483-E44E-4F87-A8C7-90A4B34570F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC1BF483-E44E-4F87-A8C7-90A4B34570F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC1BF483-E44E-4F87-A8C7-90A4B34570F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

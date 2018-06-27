@@ -10,9 +10,6 @@
     <PackageReference Include="SkyWalking.AspNetCore" Version="0.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="docker-compose.override.yml">
-      <DependentUpon>docker-compose.yml</DependentUpon>
-    </None>
     <None Update="Dockerfile">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  skywalkingsamplebackend:
-    image: ${DOCKER_REGISTRY}skywalkingsamplebackend
-    build:
-      context: .
-      dockerfile: Dockerfile

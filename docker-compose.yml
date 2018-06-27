@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  skywalkingfrontend:
+    image: ${DOCKER_REGISTRY}skywalkingfrontend
+    build:
+      context: .
+      dockerfile: SkyWalking.Sample.Frontend/Dockerfile
+  skywalkingbackend:
+    image: ${DOCKER_REGISTRY}skywalkingbackend
+    build:
+      context: .
+      dockerfile: SkyWalking.Sample.Backend/Dockerfile
