@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SkyWalking.Sample.Frontend.Models
+namespace SkyWalking.Sample.Backend.Models
 {
     public class AppInfo
     {
