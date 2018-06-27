@@ -4,9 +4,10 @@ EXPOSE 80
 
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
-COPY SkyWalking.Sample.Backend.csproj SkyWalking.Sample.Backend/
+COPY SkyWalking.Sample.Backend/SkyWalking.Sample.Backend.csproj SkyWalking.Sample.Backend/
 RUN dotnet restore SkyWalking.Sample.Backend/SkyWalking.Sample.Backend.csproj
 COPY . .
+WORKDIR /src/SkyWalking.Sample.Backend
 RUN dotnet build SkyWalking.Sample.Backend.csproj -c Release -o /app
 
 FROM build AS publish
