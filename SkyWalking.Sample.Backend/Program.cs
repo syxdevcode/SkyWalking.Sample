@@ -19,6 +19,7 @@ namespace SkyWalking.Sample.Backend
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://*:8084")
                 .UseStartup<Startup>();
     }
 }
