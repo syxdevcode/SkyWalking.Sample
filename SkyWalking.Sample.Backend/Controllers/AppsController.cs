@@ -14,24 +14,26 @@ namespace SkyWalking.Sample.Backend.Controllers
         {
             _dbContext = sampleDbContext;
         }
-
+        // GET api/apps
         [HttpGet]
         public IEnumerable<Application> Get()
         {
             return _dbContext.Applications.ToList();
         }
-
+        //GET api/apps/5
         [HttpGet("{id}")]
         public Application Get(int id)
         {
             return _dbContext.Applications.Find(id);
         }
 
+        // PUT api/apps
         [HttpPut]
-        public void Put([FromBody]Application application)
+        public string Put([FromBody]Application application)
         {
             _dbContext.Applications.Add(application);
             _dbContext.SaveChanges();
+            return "1";
         }
     }
 }

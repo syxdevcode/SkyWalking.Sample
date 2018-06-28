@@ -63,6 +63,14 @@ namespace SkyWalking.Sample.Backend
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                using (var sampleDbContext = scope.ServiceProvider.GetService<SampleDbContext>())
+                {
+                    sampleDbContext.Database.EnsureCreated();
+                }
+            }
+
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
